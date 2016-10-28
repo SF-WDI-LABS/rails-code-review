@@ -36,6 +36,9 @@ One mantra in the rails community is that "controllers should be skinny" and "mo
 
 Just because you have "classes" doesn't mean that you're using an "Object Oriented" approach. Models are more than just "data" they should also encapsulate "behavior" and "knowledge" about the world.
 
+#### Exercise
+Review your code to find a controller action that is "fat".
+
 **Prompt**: Imagine that your resource (`user`, `post`) is a livining breathing object. Now, revisit your controller and ask yourself the following questions:
 
 * What problem(s) am I solving / what do I need from my data?
