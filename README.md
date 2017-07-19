@@ -43,3 +43,18 @@ Review your code to find a controller action that is "fat".
 
 * What problem(s) am I solving / what do I need from my data?
 * If I had to ask my resource a question, could the resource answer it?
+
+
+#### Rails Code Smells
+* Is the majority of your logic in your view? Is it easy to understand and maintain?
+* Did you query your model/database *directly* from your view?
+* Do you have the same logic repeated across controller actions? e.g. finding a record by id?
+* Do you have "magic numbers" in your code -- e.g. a number of value that appears in many places and would be hard to update?
+* Did you use view helpers instead of rolling your own html? e.g. Did you use strings (`"/posts/#{id}"`) when you could have used path helpers (`post_path(@post)`)?
+* Did you forget to *authorize* users so that anyone who does not own a resource cannot see the `edit` form, or submit to `update` or `destroy`?
+* Did you forget to re-render the form when validations fail, thereby wiping the form?
+* Did you let the database do the heavy lifting, or did you do most of your looping/sorting/finding in-memory?
+* Did you throw everything into a single view, or did you break out cohorent pieces into partials (e.g. index vs. show vs. forms).
+* Do you have javascript or css in your html?
+* Did you use a 3rd party CDN instead of the asset pipeline?
+* Did you add database indexes to fields you query? e.g. if you intend to search by `username` you should index your `username` column.
