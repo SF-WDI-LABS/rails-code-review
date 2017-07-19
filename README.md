@@ -4,7 +4,7 @@
 
 Sandi Metz is a programmer, speaker, and author of [Practical Object Oriented Design in Ruby](http://www.sandimetz.com/products#product-poodr). In her 2013 Presentation at the Barcelona Ruby Conference she discusses five "rules" or guidelines for writing solid ruby code.
 
-**[Watch it here](https://www.youtube.com/v/npOGOmkxuio?start=470&end=730)** (3 minutes)
+**[Watch it here](https://www.youtube.com/watch?v=npOGOmkxuio&feature=youtu.be&t=7m57s)** (~5 minutes from 7:57-12:23)
 
 #### Keywords
 * `PORO` - "Plain Old Ruby Object"
